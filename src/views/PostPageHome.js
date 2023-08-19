@@ -1,3 +1,4 @@
+import "./PostPageHome.css"
 import { useEffect, useState } from "react";
 import { Container, Image, Nav, Navbar, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -29,7 +30,7 @@ export default function PostPageHome() {
   return (
     <>
       <Navbar variant="light" bg="light">
-        <Container>
+        <Container id ="HomeNavbar">
           <Navbar.Brand href="/">Tinkergram</Navbar.Brand>
           <Nav>
             <Nav.Link href="/add">New Post</Nav.Link>
@@ -65,6 +66,8 @@ function ImageSquare({ post }) {
           objectFit: "cover",
           width: "18rem",
           height: "18rem",
+          borderStyle: "solid",
+        
         }}
       />
     </Link>
